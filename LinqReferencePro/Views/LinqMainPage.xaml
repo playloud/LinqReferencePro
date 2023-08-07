@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:lib="using:LinqReferencePro.ViewModels"
+             x:DataType="lib:DocCollectionModel"
+             x:Class="LinqReferencePro.Views.LinqMainPage"
+             Shell.BackgroundColor="DarkSlateGrey"
+             Shell.TitleColor="WhiteSmoke"
+             >
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="Beige" StatusBarStyle="DarkContent" />
+    </ContentPage.Behaviors>
+    
+
+    <!-- <VerticalStackLayout> -->
+    <!--      -->
+    <!--      -->
+    <!-- </VerticalStackLayout> -->
+
+    <RefreshView x:Name="refreshView" Refreshing="OnRefreshing" >
+        <CollectionView 
+                IsGrouped="True"
+                ItemsSource="{Binding Docs}" 
+                ItemsLayout="VerticalList" 
+                SelectionMode="Single" 
+                SelectionChanged="OnSelectionChanged"
+                >
+
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="lib:DocGroup">
+                    <!-- <Border  -->
+                    <!--     x:Name="sectionBorder" -->
+                    <!--     Stroke="#C49B33" -->
+                    <!--         BackgroundColor="#f2c95e" -->
+                    <!--         StrokeThickness="1" -->
+                    <!--         StrokeShape="RoundRectangle 10,10,10,10" -->
+                    <!--         Padding ="2" -->
+                    <!--         WidthRequest="370" -->
+                    <!--         HorizontalOptions="Center"> -->
+                    <!-- -->
+                    <!--     <Label  -->
+                    <!--         Text="{Binding GroupName}" -->
+                    <!--         HorizontalTextAlignment="Center" -->
+                    <!--         FontAttributes="Bold" -->
+                    <!--         FontSize="15" -->
+                    <!--     /> -->
+                    <!-- -->
+                    <!-- </Border> -->
+                    <Label 
+                        BackgroundColor="#f2c95e"
+                        Text="{Binding GroupName}"
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                    />
+
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type lib:Doc}">
+
+                    <Grid Padding="5" Margin="2,2">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- <Image Grid.RowSpan="3" -->
+                        <!--            Source="{Binding ImageUrl}" -->
+                        <!--            Aspect="AspectFill" -->
+                        <!--            HeightRequest="50" -->
+                        <!--            WidthRequest="50"  -->
+                        <!--            Margin="10"/> -->
+
+                        <Label Grid.Row="0" Grid.Column="0" 
+                               Text="{Binding Title}"
+                               FontAttributes="Bold" 
+                               FontSize="13" />
+
+                        <Label Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Description}"
+                                   FontAttributes="Italic"
+                                   FontSize="10"
+                                   LineBreakMode="WordWrap"
+                                   MaxLines="3"
+                                   />
+                        
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+    </RefreshView>
+</ContentPage>

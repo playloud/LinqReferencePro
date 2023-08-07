@@ -1,0 +1,576 @@
+{
+  "Docs": [
+    {
+      "Id": "84079940471c4b8a",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Projecting_01_Select.html",
+      "Title": "Select",
+      "Description": "Transforming or project elements of a sequence into a new form.",
+      "Category": "Projecting",
+      "CategoryOrder": 0,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "25355b8078ed4bf7",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Projecting_02_SelectMany.html",
+      "Title": "SelectMany",
+      "Description": "Flattenning a collection of collections into a single collection. ",
+      "Category": "Projecting",
+      "CategoryOrder": 0,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "f44563f87bb842c0",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_01_Where.html",
+      "Title": "Where",
+      "Description": "Filters elements of a sequence based on a given condition.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "e31a298d6d3940c5",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_02_Take.html",
+      "Title": "Take",
+      "Description": "Returns a specified number of elements from the beginning of a sequence.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "911cc40ca43c4ca6",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_03_TakeWhile.html",
+      "Title": "TakeWhile",
+      "Description": "Returns elements from a sequence as long as a specified condition is true.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "b49790ae126f4ac6",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_04_Skip.html",
+      "Title": "Skip",
+      "Description": "Skips a specified number of elements from the beginning of a sequence and return the rest of elements.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "e0b093443a1f448b",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_05_SkipWhile.html",
+      "Title": "SkipWhile",
+      "Description": "Skips elements from a sequence as long as a specified condition is true, and then return the remaining elements.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "9fe6a8b3955b41e7",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Filtering_06_Distinct.html",
+      "Title": "Distinct",
+      "Description": "Eliminates duplicate elements from a sequence.",
+      "Category": "Filtering",
+      "CategoryOrder": 1,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "48a8837ccd2e4440",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Joining_01_Join.html",
+      "Title": "Join",
+      "Description": "Combines two sequences based on a common key and return a sequence that contains elements that match from both input sequences. ",
+      "Category": "Joining",
+      "CategoryOrder": 2,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "2504c42cb99943d9",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Joining_02_GroupJoin.html",
+      "Title": "GroupJoin",
+      "Description": "Combines two sequences from a common key and group the results by the key from the first sequence.",
+      "Category": "Joining",
+      "CategoryOrder": 2,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "a0a79cad54d84f59",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Joining_03_Zip.html",
+      "Title": "Zip",
+      "Description": "Combines two sequences element-wise and return a new sequence of the same length as the shorter of the two input sequences.",
+      "Category": "Joining",
+      "CategoryOrder": 2,
+      "Theme": "Basic"
+    },
+
+
+    {
+      "Id": "0f6be72d077f4cb4",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Ordering_01_OrderBy.html",
+      "Title": "OrderBy",
+      "Description": "Sorts the elements of a sequence in ascending order based on one or more keys",
+      "Category": "Ordering",
+      "CategoryOrder": 3,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "0520202be5054835",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Ordering_02_ThenBy.html",
+      "Title": "ThenBy",
+      "Description": "Performs a secondary sort on a sequence that has already been sorted using the OrderBy operator. ",
+      "Category": "Ordering",
+      "CategoryOrder": 3,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "831055e92fe9453b",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Ordering_03_Reverse.html",
+      "Title": "Reverse",
+      "Description": "Reverses the order of the elements in a sequence.",
+      "Category": "Ordering",
+      "CategoryOrder": 3,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "8bd75cf2ba7e4b36",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Grouping_01_GroupBy.html",
+      "Title": "GropyBy",
+      "Description": "Groups the elements of a sequence based on a key and return a sequence of groups, where each group represents a unique key and contains all the elements of the original sequence that have that key.",
+      "Category": "Grouping",
+      "CategoryOrder": 4,
+      "Theme": "Basic"
+    },
+
+
+    {
+      "Id": "7ebd6cbe54184d68",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\SetOperators_01_Concat.html",
+      "Title": "Concat",
+      "Description": "Combines two sequences into a single sequence.",
+      "Category": "Set Operators",
+      "CategoryOrder": 5,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "2a75b51027c44b52",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\SetOperators_02_Union.html",
+      "Title": "Union",
+      "Description": "Combines two sequences into a single sequence that contains only the unique elements from both sequences.",
+      "Category": "Set Operators",
+      "CategoryOrder": 5,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "04389b2df3e34354",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\SetOperators_03_Intersect.html",
+      "Title": "Intersect",
+      "Description": "Combines two sequences and return a new sequence that contains only the elements that are common to both sequences. ",
+      "Category": "Set Operators",
+      "CategoryOrder": 5,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "5d3268b9629049f8",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\SetOperators_04_Except.html",
+      "Title": "Except",
+      "Description": "Returning a new sequence that contains the elements from the first sequence that do not appear in the second sequence. ",
+      "Category": "Set Operators",
+      "CategoryOrder": 5,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "4343a49fa90f4192",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Coversion_import_01_OfType.html",
+      "Title": "OfType",
+      "Description": "Filters a sequence and return a new sequence that contains only the elements of a specified type. ",
+      "Category": "Conversion Methods-Import",
+      "CategoryOrder": 6,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "797ab5c419644454",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Coversion_import_02_Cast.html",
+      "Title": "Cast",
+      "Description": "Converting the elements of a sequence to a specified type.",
+      "Category": "Conversion Methods-Import",
+      "CategoryOrder": 6,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "5c6ea50747c1467b",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_01_ToArray.html",
+      "Title": "ToArray",
+      "Description": "Converting a sequence to an array.",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "254337b922b5498a",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_02_ToList.html",
+      "Title": "ToList",
+      "Description": "Converting a sequence to a list",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "893c8ca8226c4147",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_03_ToDictionary.html",
+      "Title": "ToDictionary",
+      "Description": "Creating a new Dictionary<TKey, TValue> from a sequence.",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "59ae6e00681c4341",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_04_ToLookup.html",
+      "Title": "ToLookup",
+      "Description": "Creating a new ILookup<TKey,TElement> from a sequence, returning a new ILookup<TKey, TElement> that groups the elements of the input sequence based on a specified key.",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "a38e7e5f94544cb0",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_05_AsEnumerable.html",
+      "Title": "AsEnumerable",
+      "Description": "Casting a sequence to an IEnumerable<T> interface.",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "f946d88298eb4cfa",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Conversion_export_06_AsQueryable.html",
+      "Title": "AsQueryable",
+      "Description": "Casting a sequence to an IQueryable<T> interface.",
+      "Category": "Conversion Methods-Export",
+      "CategoryOrder": 7,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "ca235001f5e5408b",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_01_First.html",
+      "Title": "First",
+      "Description": "Returning the first element in a sequence that satisfies a given condition.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "324d36d3664141be",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_02_FirstOrDefault.html",
+      "Title": "FirstOrDefault",
+      "Description": "Returning the first element in a sequence that satisfies a given condition, or a default value if no element satisfies the condition",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "839b06c435f8457c",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_03_Last.html",
+      "Title": "Last",
+      "Description": "Returning the last element in a sequence that satisfies a given condition.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "79a9f79b519d4d5d",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_04_LastOrDefault.html",
+      "Title": "LastOrDefault",
+      "Description": "Returning the last element in a sequence that satisfies a given condition, or a default value if no element satisfies the condition.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "91c872c58fee45b8",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_05_Single.html",
+      "Title": "Single",
+      "Description": "Returning the only element in a sequence that satisfies a given condition.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "ff1f7baa05a6402b",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_06_SingleOrDefault.html",
+      "Title": "SingleOrDefault",
+      "Description": "Returning the only element in a sequence that satisfies a given condition, or a default value if no element satisfies the condition.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "1006c260e1bb4ca5",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_07_ElementAt.html",
+      "Title": "ElementAt",
+      "Description": "Returning the element at a specified index in a sequence.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "4cb8225f1e984ea7",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_08_ElementAtOrDefault.html",
+      "Title": "ElementAtOrDefault",
+      "Description": "Returning the element at a specified index in a sequence or a default value if the index is out of range.",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "3e93e17504d4441e",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\ElementOperators_09_DefaultIfEmpty.html",
+      "Title": "DefaultIfEmpty",
+      "Description": "Returning a sequence that contains the elements of the input sequence or a default value if the input sequence is empty",
+      "Category": "Element operators",
+      "CategoryOrder": 8,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "4e834ddf2c714311",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_01_Aggregate.html",
+      "Title": "Aggregate",
+      "Description": "Applying an accumulator function over a sequence.",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "0685e19071a24c2e",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_02_Average.html",
+      "Title": "Average",
+      "Description": "Calculating the average of a sequence of numeric values. ",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "fc8dfc07be3c47f1",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_03_Count.html",
+      "Title": "Count",
+      "Description": "Counting the number of elements in a sequence that satisfies a given condition",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "38e6ced8373449c4",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_04_LongCount.html",
+      "Title": "LongCount",
+      "Description": "Counting the number of elements in a sequence that satisfies a given condition, and returns the count as a long value",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "0fb5a040100148fc",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_05_Sum.html",
+      "Title": "Sum",
+      "Description": "Calculating the summation of a sequence of numeric values.",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "772e7331c0964b68",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_06_Max.html",
+      "Title": "Max",
+      "Description": "Finding the maximum value in a sequence of values.",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "f33cab90f2a040f2",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\AggregationMethods_07_Min.html",
+      "Title": "Min",
+      "Description": "Finding the minimum value in a sequence of values.",
+      "Category": "Aggregation methods",
+      "CategoryOrder": 9,
+      "Theme": "Basic"
+    },
+
+
+
+
+
+    {
+      "Id": "831fe5ed7d0749e0",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Quantifiers_01_All.html",
+      "Title": "All",
+      "Description": "Determining whether all elements of a sequence satisfy a specified condition.",
+      "Category": "Quantifiers",
+      "CategoryOrder": 10,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "5065f5e11c0e4b39",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Quantifiers_02_Any.html",
+      "Title": "Any",
+      "Description": "Determining whether any element in a sequence satisfies a specified condition",
+      "Category": "Quantifiers",
+      "CategoryOrder": 10,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "54754ae42cb24f53",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Quantifiers_03_Contains.html",
+      "Title": "Contains",
+      "Description": "Determining whether a sequence contains a specified element.",
+      "Category": "Quantifiers",
+      "CategoryOrder": 10,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "cfcb5895861f4597",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Quantifiers_04_SequenceEqual.html",
+      "Title": "SequenceEqual",
+      "Description": "Determining whether two sequences are equal.",
+      "Category": "Quantifiers",
+      "CategoryOrder": 10,
+      "Theme": "Basic"
+    },
+
+
+    {
+      "Id": "0165a4632cd24d6a",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Generation_01_Empty.html",
+      "Title": "Empty",
+      "Description": "Returning an empty collection of the specified type",
+      "Category": "Generation",
+      "CategoryOrder": 11,
+      "Theme": "Basic"
+    },
+
+    {
+      "Id": "82c821e3a42843c0",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Generation_02_Range.html",
+      "Title": "Range",
+      "Description": "Generating a sequence of integers.",
+      "Category": "Generation",
+      "CategoryOrder": 11,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "7ac3873061d942f5",
+      "ImageUrl": "",
+      "HTMLPath": "basics\\Generation_03_Repeat.html",
+      "Title": "Repeat",
+      "Description": "Generating a sequence that contains a repeated value.",
+      "Category": "Generation",
+      "CategoryOrder": 11,
+      "Theme": "Basic"
+    },
+    {
+      "Id": "cbdd8e1b4dd34d5e",
+      "ImageUrl": "",
+      "HTMLPath": "advance\\JSONAccessibilityJObject.html",
+      "Title": "Json Accessibility - JObject",
+      "Description": "Access JSON by JObject",
+      "Category": "Json",
+      "CategoryOrder": 50,
+      "Theme": "Advanced"
+    },
+    {
+      "Id": "7198de16001b41a2",
+      "ImageUrl": "",
+      "HTMLPath": "advance\\JSONAccessibilityMapping.html",
+      "Title": "Json Accessibility - Mapping",
+      "Description": "Access JSON by mapping objects",
+      "Category": "Json",
+      "CategoryOrder": 50,
+      "Theme": "Advanced"
+    },
+    {
+      "Id": "47e55f6ed18f4108",
+      "ImageUrl": "",
+      "HTMLPath": "advance\\Linq2EF.html",
+      "Title": "Linq2EF",
+      "Description": "Linq to entity framework",
+      "Category": "Entity Framework",
+      "CategoryOrder": 51,
+      "Theme": "Advanced"
+    },
+    {
+      "Id": "21f52ba5f68f4cef",
+      "ImageUrl": "",
+      "HTMLPath": "advance\\Linq2XML.html",
+      "Title": "Linq2XML",
+      "Description": "Linq to Access XML",
+      "Category": "XML",
+      "CategoryOrder": 52,
+      "Theme": "Advanced"
+    }
+
+  ]
+
+}

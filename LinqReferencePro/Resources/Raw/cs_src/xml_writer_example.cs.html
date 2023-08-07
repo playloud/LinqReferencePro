@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+    <META http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <title>Exported from Notepad++</title>
+    <style type="text/css">
+        span {
+            font-family: 'D2Coding';
+            font-size: 10pt;
+            color: #000000;
+        }
+
+        .sc0 {
+        }
+
+        .sc4 {
+            color: #FF8000;
+        }
+
+        .sc5 {
+            font-weight: bold;
+            color: #0000FF;
+        }
+
+        .sc6 {
+            color: #808080;
+        }
+
+        .sc10 {
+            font-weight: bold;
+            color: #000080;
+        }
+
+        .sc11 {
+        }
+
+        .sc16 {
+            color: #8000FF;
+        }
+    </style>
+</head>
+<body>
+    <div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; ">
+        <span class="sc16">var</span><span class="sc0"> </span><span class="sc11">sts</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">new</span><span class="sc0"> </span><span class="sc11">XmlWriterSettings</span><span class="sc10">()</span><span class="sc0">
+        </span><span class="sc10">{</span><span class="sc0">
+        </span><span class="sc11">Indent</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc5">true</span><span class="sc10">,</span><span class="sc0">
+        </span><span class="sc10">};</span><span class="sc0">
+        </span><span class="sc5">using</span><span class="sc0"> </span><span class="sc11">XmlWriter</span><span class="sc0"> </span><span class="sc11">writer</span><span class="sc0"> </span><span class="sc10">=</span><span class="sc0"> </span><span class="sc11">XmlWriter</span><span class="sc10">.</span><span class="sc11">Create</span><span class="sc10">(</span><span class="sc6">"data.xml"</span><span class="sc10">,</span><span class="sc0"> </span><span class="sc11">sts</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">writer</span><span class="sc10">.</span><span class="sc11">WriteStartDocument</span><span class="sc10">();</span><span class="sc0">
+        </span><span class="sc11">writer</span><span class="sc10">.</span><span class="sc11">WriteStartElement</span><span class="sc10">(</span><span class="sc6">"value"</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">writer</span><span class="sc10">.</span><span class="sc11">WriteValue</span><span class="sc10">(</span><span class="sc4">6</span><span class="sc10">);</span><span class="sc0">
+        </span><span class="sc11">writer</span><span class="sc10">.</span><span class="sc11">WriteEndElement</span><span class="sc10">();</span><span class="sc0">
+        </span><span class="sc11">writer</span><span class="sc10">.</span><span class="sc11">WriteEndDocument</span><span class="sc10">();</span><span class="sc0">
+        </span><span class="sc11">Console</span><span class="sc10">.</span><span class="sc11">WriteLine</span><span class="sc10">(</span><span class="sc6">"XML document created"</span><span class="sc10">);</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LinqReferencePro.Views.PSHHTMLViewerPage"
+             Shell.BackgroundColor="Black"
+             Shell.TitleColor="WhiteSmoke"
+             >
+    <Grid RowDefinitions="30,*" Row="2" >
+
+        <!-- <StackLayout Orientation="Horizontal"  Grid.Row="0"> -->
+        <!--     <ImageButton x:Name="imgBtn_fav" -->
+        <!--                  Source="heart_0.svg" -->
+        <!--                  Padding="1" -->
+        <!--                  Margin="1" -->
+        <!--                  Clicked="OnFavButtonClicked" Aspect="AspectFit" BorderWidth="0" -->
+        <!--                  HorizontalOptions="End" -->
+        <!--                  /> -->
+        <!--     <Button x:Name="but_next" Text="next" FontSize="10" HorizontalOptions="Center"/> -->
+        <!--      -->
+        <!--     <Button x:Name="but_prev" Text="prev" FontSize="10" HorizontalOptions="Start"/> -->
+        <!--      -->
+        <!-- </StackLayout> -->
+
+
+        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+            
+            <!-- <Label Text="FlexLayout in Action" FontSize="18" /> -->
+            <!-- <Image Source="dotnet_bot_branded.png" HeightRequest="300" /> -->
+            <!-- <Button Text="Do-Nothing Button" /> -->
+            <!-- <Label Text="Another Label" /> -->
+
+            <Button x:Name="but_prev" Text="&lt;" 
+                    FontSize="15" Padding ="0" Margin="3" HorizontalOptions="Start"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Clicked="But_prev_OnClicked" />
+
+            <Button x:Name="but_next" Text="&gt;" 
+                    FontSize="15" Padding ="0" Margin="3" HorizontalOptions="Center"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"
+                    Clicked="But_next_OnClicked" />
+
+            <Label Text="" FontSize="12" />
+            <Label Text=" " FontSize="18" />
+            <ImageButton x:Name="imgBtn_fav"
+                         Source="heart_0.svg"
+                         Padding="1"
+                         Margin="1"
+                         Clicked="OnFavButtonClicked" Aspect="AspectFit" BorderWidth="0"
+                         HorizontalOptions="End"
+            />
+
+            
+
+            
+
+        </FlexLayout>
+
+        <ScrollView Grid.Row="1">
+            <WebView x:Name ="webView"/>
+            
+        </ScrollView>
+        
+    </Grid>
+</ContentPage>

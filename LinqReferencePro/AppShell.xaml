@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LinqReferencePro.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views=" clr-namespace:LinqReferencePro.Views"
+    FlyoutBehavior="{OnIdiom Phone=Flyout, Default=Flyout}">
+
+    <!-- <TabBar> -->
+    <!--     <Tab Title="Linq Basics" Icon="monitor.png"> -->
+    <!--         <ShellContent -->
+    <!--             x:Name="linqBasicPage" -->
+    <!--             Title="Linq Basic" -->
+    <!--             Route="LinqMainPage" /> -->
+    <!--     </Tab> -->
+    <!--     <Tab Title="Favorites" Icon="monitor.png"> -->
+    <!--         <ShellContent -->
+    <!--             x:Name="favoritesPage" -->
+    <!--             Title="Linq Basic" -->
+    <!--             Route="LinqMainPage" /> -->
+    <!--     </Tab> -->
+    <!--     <Tab Title="page01" Icon="monitor.png"> -->
+    <!--         <ShellContent -->
+    <!--             Title="PSHPage01" -->
+    <!--             ContentTemplate="{DataTemplate views:PSHPage01}" -->
+    <!--             Route="PSHPage01" /> -->
+    <!--     </Tab> -->
+    <!--     <Tab Title="뭐시기" Icon="guitar.png"> -->
+    <!--         <ShellContent -->
+    <!--             Title="PSHPage02!!" -->
+    <!--             ContentTemplate="{DataTemplate views:PSHPage02}" -->
+    <!--             Route="PSHPage02" /> -->
+    <!--     </Tab> -->
+    <!-- </TabBar> -->
+
+    <FlyoutItem Title="Main" Icon="bookmark.png">
+
+        <Tab Title="Linq Basic" Icon="code_solid.png">
+            <ShellContent
+                x:Name="linqBasicPage"
+                Title="Linq Basic"
+                Route="LinqMainPage" />
+        </Tab>
+
+        <Tab Title="Linq Advanced" Icon="codepen.png">
+            <ShellContent
+                x:Name="linqAdvancedPage"
+                Title="Linq Advanced"
+                Route="LinqMainPage" />
+        </Tab>
+
+        <Tab Title="Favorites" Icon="bookmark_regular.png">
+            <ShellContent
+                x:Name="linqFavPage"
+                Title="Favorites"
+                Route="LinqMainPage" />
+        </Tab>
+
+        
+
+        <!-- <Tab Title="main-page02" Icon="monitor.png"> -->
+        <!--     <ShellContent -->
+        <!--         Title="PSHPage01" -->
+        <!--         ContentTemplate="{DataTemplate views:PSHPage01}" -->
+        <!--         Route="PSHPage01" /> -->
+        <!-- </Tab> -->
+        <!-- -->
+        <!-- <Tab Title="뭐시기" Icon="guitar.png"> -->
+        <!--     <ShellContent -->
+        <!--         Title="PSHPage02!!" -->
+        <!--         ContentTemplate="{DataTemplate views:PSHPage02}" -->
+        <!--         Route="PSHPage02" /> -->
+        <!-- </Tab> -->
+
+    </FlyoutItem>
+
+    <!-- <FlyoutItem Title="PSHTests"> -->
+    <!--     <Tab Title="page01"> -->
+    <!--         <ShellContent -->
+    <!--             Title="PSHPage01" -->
+    <!--             ContentTemplate="{DataTemplate views:PSHPage01}" -->
+    <!--             Route="PSHPage01" /> -->
+    <!--     </Tab> -->
+    <!--     <Tab Title="page02"> -->
+    <!--         <ShellContent -->
+    <!--             Icon="icons8-baby-feet-50.png" -->
+    <!--             Title="PSHPage02!!" -->
+    <!--             ContentTemplate="{DataTemplate views:PSHPage02}" -->
+    <!--             Route="PSHPage02" /> -->
+    <!--     </Tab> -->
+    <!-- </FlyoutItem> -->
+
+    <ShellContent
+        Icon="info.png"
+        x:Name="settingsPage"
+        Title="About"
+        ContentTemplate="{DataTemplate views:SettingsPage}"
+        Route="SettingsPage" />
+
+
+    <!-- <ShellContent -->
+    <!--     Title="PSHView02" -->
+    <!--     ContentTemplate="{DataTemplate views:PSHView02}" -->
+    <!--     Route="PSHView02" /> -->
+    
+    <!-- <MenuItem Text="an menuItem" Command="{Binding NavigateToSettingsCommand}"/> -->
+
+</Shell>

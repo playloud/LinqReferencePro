@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lib=" clr-namespace:LinqReferencePro.ViewModels"
+             x:Class="LinqReferencePro.Views.PSHCollectionPage01">
+
+    <VerticalStackLayout>
+        <Label 
+            Text="PSH collection Page 01"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <CollectionView ItemsSource="{Binding PeopleModels}" ItemsLayout="VerticalList" 
+                        SelectionMode="Single" 
+                        SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type lib:PeopleModel}">
+                    
+                    <Grid Padding="5">
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Image Grid.RowSpan="3"
+                               Source="{Binding ImageUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="50"
+                               WidthRequest="50" 
+                               Margin="10"/>
+                        
+                        <Label Grid.Column="1"
+                               Text="{Binding Name}"
+                               FontAttributes="Bold" />
+                        
+                        <Label Grid.Row="1"
+                               Grid.Column="1"
+                               Text="{Binding Age}"
+                               FontAttributes="Italic"
+                                />
+                        
+                        <Label Grid.Row="2"
+                               Grid.Column="1"
+                               Text="{Binding Rank}"
+                               FontAttributes="Italic"
+                               FontSize="13"
+                                />
+                    </Grid>
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- <ListView ItemsSource="{Binding PeopleModels}" > -->
+        <!--     <ListView.ItemTemplate> -->
+        <!--         <DataTemplate x:DataType="{x:Type lib:PeopleModel}"> -->
+        <!--             <VerticalStackLayout> -->
+        <!--                 <Label Text="{Binding Name }" /> -->
+        <!--                 <Label Text="{Binding Age }" /> -->
+        <!--                 <Label Text="{Binding Rank }" /> -->
+        <!--             </VerticalStackLayout> -->
+        <!--         </DataTemplate> -->
+        <!--     </ListView.ItemTemplate> -->
+        <!-- </ListView> -->
+
+    </VerticalStackLayout>
+
+</ContentPage>
