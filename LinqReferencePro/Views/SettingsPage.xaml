@@ -4,17 +4,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LinqReferencePro.Views.SettingsPage">
     <ContentPage.Content>
-        <VerticalStackLayout>
-            <Image Source="images/linq_logo2.png"/>
-
-            
-            <Label FontAttributes="Bold" FontSize="15" Padding="10">About</Label>
-            <Label Padding="10" x:Name="labelAboutDesc" FontSize="12">
-                I have experienced many languages, c, c++, java, python, swift, javascript..  but didn't see a languages that has a beautiful features like C#. Untill the .net version 2.0 C# was not so shiny and mature enough, however, after LINQ has been introduced in version 3.5 it dominates world of computer languages.  I always wanted to make an reference application to check whenever I want to. The LINQ PRO is to help and make you understand better to access LINQ technologies.  I tried to give more examples for better easier understanding. Hope you enjoy the app for your happier daily development works. This app will continuously updated with new articles.
-            </Label>
+        <ScrollView>
+            <VerticalStackLayout>
+                <Image Source="images/linq_logo2.png"/>
 
 
-            <Button
+                <Label FontAttributes="Bold" FontSize="15" Padding="10">About</Label>
+                <Label Padding="10" x:Name="labelAboutDesc" FontSize="12">
+                    I have experienced many languages, c, c++, java, python, swift, javascript..  but didn't see a languages that has a beautiful features like C#. Until the .net version 2.0 C# was not so shiny and mature enough, however, after LINQ has been introduced in version 3.5 it dominates world of computer languages.  I always wanted to make an reference application to check whenever I want to. The LINQ PRO is to help and make you understand better to access LINQ technologies.  I tried to give more examples for better easier understanding. Hope you enjoy the app for your happier daily development works. This app will continuously updated with new articles.
+                </Label>
+
+
+                <Button
                 x:Name="butResetFav"
                 Text="Reset favorites"
                 Padding="10"
@@ -22,31 +23,31 @@
                 Clicked="OnClickReset"
             />
 
-            <Label Padding="10" >
-                Any questions or suggestion: linqpro@gmail.com
-            </Label>
-            
-            <Label 
+                <Label Padding="10" >
+                    Any questions or suggestion: linqpro@gmail.com
+                </Label>
+
+                <Label 
                 Padding="10"
                 VerticalOptions="Center" 
                 HorizontalOptions="End" 
                 FontSize="8">
-                All rights reserved by Seho Park
-            </Label>
+                    All rights reserved by Seho Park
+                </Label>
 
-            <Label FontAttributes="Bold" FontSize="15" Padding="10">Version History</Label>
-            <Label Padding="10" FontSize="12" MaxLines="4">
-                <Label.Text>
-                    1.1 (5 Aug 23) Adding Previos/Next buttons. 
+                <Label FontAttributes="Bold" FontSize="15" Padding="10">Version History</Label>
+                <Label Padding="10" FontSize="12" MaxLines="4">
+                    <Label.Text>
+                        1.1 (5 Aug 23) Adding Previos/Next buttons. 
                     Sample code reorganized - SelectMany, Where, Take, TakeWhile, Skip, SkipWhile,Distinct, Join, 
                     GroupJoin, GroupBy, Except, Zip
-                </Label.Text>
-            </Label>
-            <Label Padding="10" FontSize="12">
-                1.0 - initial release
-            </Label>
+                    </Label.Text>
+                </Label>
+                <Label Padding="10" FontSize="12">
+                    1.0 - initial release
+                </Label>
 
-        </VerticalStackLayout>
-        
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
