@@ -136,4 +136,13 @@
 	  </MauiAsset>
 	</ItemGroup>
 
+	<!--SHOULD NOT SHARE TO PUBLIC-->
+  <PropertyGroup Condition="$(TargetFrameworks.Contains('-android')) and '$(Configuration)' == 'Release'">
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>..\key.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>secret</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>PSHKeyAlias</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>secret</AndroidSigningKeyPass>
+  </PropertyGroup>
+
 </Project>
